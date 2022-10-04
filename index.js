@@ -18,8 +18,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static("public"));
 
-// mongoose.connect("mongodb+srv://DhananjaySarathe:pass123@cluster0.fc6puri.mongodb.net/bycMain",{useNewUrlParser: true});
-mongoose.connect('mongodb://localhost:27017/myapptry1234',{useNewUrlParser: true});
+mongoose.connect("mongodb+srv://DhananjaySarathe:pass123@cluster0.fc6puri.mongodb.net/bycMain",{useNewUrlParser: true});
+//mongoose.connect('mongodb://localhost:27017/myapptry1234',{useNewUrlParser: true});
 
 const entrySchema={
     name:String,
